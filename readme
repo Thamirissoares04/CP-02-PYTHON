@@ -1,0 +1,57 @@
+Equipe: 
+RM 559124 – Bento Rangel da Silva   
+RM 559155 – Thamiris Almeida
+RM 559067 – Werbeth Kauan Aires Nunes
+
+# Criar o PDF novamente com explicações detalhadas para cada bloco do código
+
+    "1. Objetivo do Projeto": """
+O sistema organiza números inteiros armazenados em uma lista ligada. A regra de ordenação é:
+- Números negativos: Radix Sort adaptado.
+- Números positivos: Merge Sort.
+Os negativos aparecem primeiro na lista final, seguidos dos positivos.
+""",
+    "2. estrutura_lista.py": """
+Contém a estrutura de dados da lista ligada:
+- class Node: Representa um nó com valor (data) e ponteiro (next).
+- class LinkedList:
+  - insert_end(data): insere um novo nó no final da lista.
+  - print_list(): exibe a lista formatada com '->'.
+  - is_empty(): verifica se a lista está vazia.
+  - to_list(): converte a lista ligada em lista comum para debug (não usada para ordenação).
+""",
+    "3. merge_sort.py": """
+Contém o algoritmo Merge Sort adaptado para listas ligadas.
+- split_list: divide a lista em duas partes usando ponteiros (slow e fast).
+- merge_sorted_lists: junta duas listas ordenadas em uma única.
+- merge_sort_linked_list: recursivamente ordena a lista.
+
+Merge Sort tem complexidade O(n log n) e é estável.
+""",
+    "4. radix_sort_negativos.py": """
+Implementa o Radix Sort adaptado para lidar com números negativos.
+- Os valores negativos têm seus sinais invertidos.
+- Aplica-se Radix Sort tradicional usando buckets (listas por dígito).
+- Após ordenação, os sinais são revertidos novamente.
+
+Radix Sort tem complexidade O(nk), onde k é o número de dígitos.
+""",
+    "5. main.py": """
+Arquivo principal que integra todos os módulos.
+- Cria a lista original com dados de exemplo.
+- Separa os elementos em negativos e positivos.
+- Aplica os algoritmos apropriados para cada grupo.
+- Junta as duas listas mantendo negativos antes dos positivos.
+- Exibe:
+  - Lista negativa ordenada
+  - Lista positiva ordenada
+  - Lista final concatenada
+  - Complexidade dos algoritmos
+  - Tempo de execução em milissegundos
+""",
+    "6. Funções auxiliares importantes": """
+- separar_lista: percorre a lista original e distribui os valores em duas novas listas (negativa e positiva).
+- concatenar_listas: une duas listas ligadas em sequência (negativos primeiro).
+
+
+

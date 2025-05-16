@@ -1,9 +1,8 @@
-Equipe: 
-RM 559124 – Bento Rangel da Silva   
-RM 559155 – Thamiris Almeida
-RM 559067 – Werbeth Kauan Aires Nunes
+##Equipe: 
+*RM 559124 – Bento Rangel da Silva   
+*RM 559155 – Thamiris Almeida
+*RM 559067 – Werbeth Kauan Aires Nunes
 
-# Criar o PDF novamente com explicações detalhadas para cada bloco do código
 
     "1. Objetivo do Projeto": """
 O sistema organiza números inteiros armazenados em uma lista ligada. A regra de ordenação é:
